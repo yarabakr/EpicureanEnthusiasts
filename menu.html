@@ -1,0 +1,431 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
+    <script src="app.js" async></script>
+   
+</head>
+<body>
+     
+       
+        <script>
+            const button = document.querySelector(".button");
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                button.classList.add("animate");
+                setTimeout(() => {
+                    button.classList.remove("animate");
+                }, 600);
+            });
+        </script>
+    </header>
+    
+      
+  <header >
+    <div id="navbar">
+      <img src=" fork-and-knife.png" alt="Food Logo">
+      <nav>
+        
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+            
+              
+        </ul>
+        
+      </nav>
+       <!-- menu when appear on mobile version-->
+        <ion-icon id="menu-toggle" name="menu-outline"></ion-icon>
+      </div>
+      <div class="content">
+        <h1>OUR  <span class="primary-text">SPECIAL</span> MENU </h1>
+        
+      </div>
+    
+      <div id="preloader"></div>
+  </header>
+     <div class="container">
+  <main>
+    <div class="main">
+      <!-- main navbar-->
+      <div class="main-navbar">
+       
+        
+      </div>
+      <!-- main highlight-->
+      <div class="main-highlight">
+        <!--title section and arrow-->
+        <div class="main-header">
+          <h2 class="main-title">Recommendations</h2>
+          <div class="main-arrow">
+            <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+             <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+          </div>
+        </div>
+        <!--hightlight of the food menu-->
+        <div class="highlight-wrapper">
+          <div class="highlight-card">
+            <img class="highlight-img" src="Fresh-Salad.jpg">
+            <div class="highlight-desc">
+              <h4>Fresh Salad</h4>
+              <p>$15.00</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <img class="highlight-img" src="Cafe-Latte.jpg">
+            <div class="highlight-desc">
+              <h4> Cafe Latte</h4>
+              <p>$$5.00</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <img class="highlight-img" src="g1.jpg">
+            <div class="highlight-desc">
+              <h4>Big Burger</h4>
+              <p>$15.00</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <img class="highlight-img" src="pizza.jpg">
+            <div class="highlight-desc">
+              <h4>Supreme Pizza</h4>
+              <p>$10.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--main menus / order-->
+      <div class="main-menus">
+        <!-- filter section -->
+        <div class="main-filter">
+          <div>
+            <h2 class="main-title">Menu <br>Category</h2>
+            <div class="main-arrow">
+              <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+               <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="filter-wrapper">
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="restaurant-outline"></ion-icon>
+              </div>
+              <p>All Menus</p>
+            </div>
+            <div  class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="fast-food-outline"></ion-icon>
+              </div>
+              <p><a  href="#fastfood">Burger </a></p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="pizza-outline"></ion-icon>
+              </div>
+              <p><a href="#pizza" >Pizza </a></p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="restaurant-outline"></ion-icon>
+              </div>
+              <p> <a href="#pasta">Pasta </a></p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="ice-cream-outline"></ion-icon>
+              </div>
+              <p><a href="#icecream" >Ice Cream</a></p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="cafe-outline"></ion-icon>
+              </div>
+              <p><a href="#coffee">Coffee</a></p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="fish-outline"></ion-icon>
+              </div>
+              <p><a href="#seafood">SeaFood </a></p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="nutrition-outline"></ion-icon>
+              </div>
+              <p><a href="#healthy" >Healthy</a></p>
+            </div>
+          </div>
+        </div>
+        <hr class="divider">  
+    
+    <section class="container">
+    <!-- Container of elements -->
+          <div class="main-detailed">
+          <h2 class="main-title">Choose Order</h2>
+          <h2 class="h2" id="fastfood">Fast Food</h2>
+          
+            <div class="container-items">
+           <div class="item  ">
+            <img src="cheeseburger.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Cheese Burger</h4>
+                  <p class="detail-sub">Juicy beef patty topped with melted cheddar, lettuce, and tomato.</p>
+                
+                <span class="price-item ">$8.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+            
+            
+            
+             <div class="item  ">
+            <img src="chicken-nuggets.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Chicken Nuggets</h4>
+                  <p class="detail-sub">Crispy, breaded chicken bites served with your choice of dipping sauce.</p>
+                <span class="price-item ">$6.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+            
+        
+             
+             <div class="item ">
+            <img src="frenchfries.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">French Fries</h4>
+                  <p class="detail-sub">Golden, crispy fries seasoned to perfection.</p>
+                <span class="price-item ">$3.49</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+        
+            </div>
+            <h2 class="h2" id="pizza">Pizza</h2>
+            <div class="container-items">
+              
+              
+           <div class="item ">
+            <img src="margherita.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Margherita Pizza</h4>
+                  <p class="detail-sub">Classic pizza with fresh mozzarella, basil, and tomato sauce.</p>
+                <span class="price-item ">$12.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+            
+                        <div class="item ">
+            <img src="pep.png" alt="" class="img-item">
+                 <h4 class="title-item ">Pepperoni Pizza</h4>
+                  <p class="detail-sub">Loaded with spicy pepperoni and gooey cheese on a tomato base.</p>
+                <span class="price-item ">$13.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+            
+            
+              <div class="item ">
+            <img src="veggie-supreme-pizza.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Veggie Supreme Pizza</h4>
+                  <p class="detail-sub">A colorful mix of bell peppers, olives, onions, and mushrooms.</p>
+                <span class="price-item ">$12.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+           </div>
+            <h2 class="h2" id="pasta">Pasta</h2>
+            <div class="container-items">
+              
+              <div class="item ">
+            <img src="bolognaise.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Spaghetti Bolognese</h4>
+                  <p class="detail-sub">Traditional spaghetti topped with rich meat sauce and Parmesan cheese.</p>
+                <span class="price-item ">$14.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+              
+               <div class="item ">
+            <img src="fettuccine-alfredo.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Fettuccine Alfredo</h4>
+                  <p class="detail-sub">Creamy Alfredo sauce over tender fettuccine noodles.</p>
+                <span class="price-item ">$13.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div> 
+              
+                 <div class="item ">
+            <img src="pesto-penno.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Pesto Penne</h4>
+                  <p class="detail-sub">Penne pasta tossed in a vibrant basil pesto sauce with cherry tomatoes.</p>
+                <span class="price-item ">$12.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div> 
+              
+            
+            </div>
+            <h2 class="h2"id="dessert">Dessert</h2>
+            <div class="container-items">
+              
+                <div class="item ">
+            <img src="lavaCake.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Chocolate Lava Cake</h4>
+                  <p class="detail-sub">Warm chocolate cake with a gooey molten center, served with vanilla ice cream</p>
+                <span class="price-item ">$6.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div> 
+              
+               <div class="item ">
+            <img src="cheesecake.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Cheesecake</h4>
+                  <p class="detail-sub">Creamy cheesecake on a graham cracker crust, topped with fresh berries.</p>
+                <span class="price-item ">$5.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div> 
+              
+              
+               <div class="item ">
+            <img src="tiramisu.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Tiramisu</h4>
+                  <p class="detail-sub">Classic Italian dessert made with coffee-soaked ladyfingers and mascarpone cheese.</p>
+                <span class="price-item ">$6.49</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+              
+          
+            
+           
+            </div>
+            <h2 class="h2" id="coffee">Coffee</h2>
+            <div class="container-items">
+              
+               <div class="item ">
+            <img src="espresso.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Espresso</h4>
+                  <p class="detail-sub">Strong and bold coffee shot, perfect for a quick pick-me-up.</p>
+                <span class="price-item ">$2.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+            
+             <div class="item ">
+            <img src="cappuccino.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Cappuccino</h4>
+                  <p class="detail-sub">Rich espresso topped with steamed milk and frothy foam.</p>
+                <span class="price-item ">$4.49</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+           
+            <div class="item ">
+            <img src="iced-latte.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Iced Latte</h4>
+                  <p class="detail-sub">Chilled espresso mixed with milk and served over ice.</p>
+                <span class="price-item ">$4.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+           
+           
+           
+            
+            </div>
+            <h2 class="h2" id="seafood">SeaFood</h2>
+            <div class="container-items">
+              
+              
+              <div class="item ">
+            <img src="grilled-salmon.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Grilled Salmon</h4>
+                  <p class="detail-sub">Fresh salmon fillet grilled to perfection, served with lemon butter sauce.</p>
+                <span class="price-item ">$18.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+              
+            <div class="item ">
+            <img src="fish-tacos.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Fish Tacos</h4>
+                  <p class="detail-sub">Soft tortillas filled with grilled fish, cabbage slaw, and zesty sauce.</p>
+                <span class="price-item ">$12.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+           
+           <div class="item ">
+            <img src="shrimpScampi.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Shrimp Scampi</h4>
+                  <p class="detail-sub">Succulent shrimp sautéed in garlic butter and white wine, served over pasta</p>
+                <span class="price-item ">$16.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+           
+            
+           
+            </div>
+            <h2 class="h2" id="healthy">Healthy Food</h2>
+            <div class="container-items">
+              
+               <div class="item ">
+            <img src="Guinoa-salad.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Quinoa Salad</h4>
+                  <p class="detail-sub">Nutritious quinoa mixed with fresh veggies and a light vinaigrette dressing.</p>
+                <span class="price-item ">$10.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+              
+               <div class="item ">
+            <img src="grilled-chicken-wrap.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Grilled Chicken Wrap</h4>
+                  <p class="detail-sub">Whole wheat wrap filled with grilled chicken, spinach, and hummus.</p>
+                <span class="price-item ">$9.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+              
+               <div class="item ">
+            <img src="avocado-toast.jpg" alt="" class="img-item">
+                 <h4 class="title-item ">Avocado Toast</h4>
+                  <p class="detail-sub">Toasted bread topped with smashed avocado, cherry tomatoes, and feta cheese.</p>
+                <span class="price-item ">$8.99</span>
+                <button class="btn-add-to-cart">Order Now</button>
+            </div>
+              
+        </div>
+            
+             </div>
+          
+            </div>
+            
+        </div>
+            
+    
+          
+        </div>
+        <!-- Shopping Cart -->
+        <div class="cart" id="cart">
+            <div class="header-cart">
+                <h2>Total</h2>
+            </div>
+
+            <div class="cart-items">
+
+            </div>
+            <div class="cart-total">
+                <div class="row">
+                    <strong>Payment</strong>
+                    <span class="cart-total-price">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pay">Buy Now <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+
+<script src="script.js" ></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ 
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  
+    </body>
+    
+  
+  
+  <footer id="footer">
+     <p>Copyright &copy; 2025 All rights reserved | Made by <b>Yara Bakr</b></p>
+     
+   </footer>
+    
+</body>
+</html>
